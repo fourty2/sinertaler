@@ -1,6 +1,7 @@
-Bitcoin Core integration/staging tree
+sinertaler
 =====================================
 
+<<<<<<< HEAD
 http://www.sinertaler.org
 
 Copyright (c) 2009-2013 Bitcoin Core Developers
@@ -69,3 +70,7 @@ for the build/test scripts.
 Large changes should have a test plan, and should be tested by somebody other
 than the developer who wrote the code.
 See https://github.com/sinertaler/QA/ for how to create a test plan.
+=======
+
+nothing to see here, yet
+>>>>>>> 47770cc4009e55cccc59a22867cfd3e03fea55d4
