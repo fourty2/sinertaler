@@ -39,9 +39,9 @@ static bool AppInitRPC(int argc, char* argv[])
         // First part of help message is specific to RPC client
         std::string strUsage = _("Bitcoin RPC client version") + " " + FormatFullVersion() + "\n\n" +
             _("Usage:") + "\n" +
-              "  bitcoin-cli [options] <command> [params]  " + _("Send command to Bitcoin server") + "\n" +
-              "  bitcoin-cli [options] help                " + _("List commands") + "\n" +
-              "  bitcoin-cli [options] help <command>      " + _("Get help for a command") + "\n";
+              "  sinertaler-cli [options] <command> [params]  " + _("Send command to Bitcoin server") + "\n" +
+              "  sinertaler-cli [options] help                " + _("List commands") + "\n" +
+              "  sinertaler-cli [options] help <command>      " + _("Get help for a command") + "\n";
 
         strUsage += "\n" + HelpMessageCli(true);
 

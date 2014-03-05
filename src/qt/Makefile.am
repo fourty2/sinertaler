@@ -5,84 +5,84 @@ AM_CPPFLAGS += -I$(top_srcdir)/src \
   -I$(top_builddir)/src/qt/forms \
   $(PROTOBUF_CFLAGS) \
   $(QR_CFLAGS)
-bin_PROGRAMS = bitcoin-qt
-noinst_LIBRARIES = libbitcoinqt.a
+bin_PROGRAMS = sinertaler-qt
+noinst_LIBRARIES = libsinertalerqt.a
 SUBDIRS = $(BUILD_TEST_QT)
 DIST_SUBDIRS = test
 
-# bitcoin qt core #
+# sinertaler qt core #
 QT_TS = \
-  locale/bitcoin_ach.ts \
-  locale/bitcoin_af_ZA.ts \
-  locale/bitcoin_ar.ts \
-  locale/bitcoin_be_BY.ts \
-  locale/bitcoin_bg.ts \
-  locale/bitcoin_bs.ts \
-  locale/bitcoin_ca_ES.ts \
-  locale/bitcoin_ca.ts \
-  locale/bitcoin_ca@valencia.ts \
-  locale/bitcoin_cmn.ts \
-  locale/bitcoin_cs.ts \
-  locale/bitcoin_cy.ts \
-  locale/bitcoin_da.ts \
-  locale/bitcoin_de_AT.ts \
-  locale/bitcoin_de.ts \
-  locale/bitcoin_el_GR.ts \
-  locale/bitcoin_en.ts \
-  locale/bitcoin_eo.ts \
-  locale/bitcoin_es_CL.ts \
-  locale/bitcoin_es_DO.ts \
-  locale/bitcoin_es_MX.ts \
-  locale/bitcoin_es.ts \
-  locale/bitcoin_es_UY.ts \
-  locale/bitcoin_et.ts \
-  locale/bitcoin_eu_ES.ts \
-  locale/bitcoin_fa_IR.ts \
-  locale/bitcoin_fa.ts \
-  locale/bitcoin_fi.ts \
-  locale/bitcoin_fr_CA.ts \
-  locale/bitcoin_fr.ts \
-  locale/bitcoin_gl.ts \
-  locale/bitcoin_gu_IN.ts \
-  locale/bitcoin_he.ts \
-  locale/bitcoin_hi_IN.ts \
-  locale/bitcoin_hr.ts \
-  locale/bitcoin_hu.ts \
-  locale/bitcoin_id_ID.ts \
-  locale/bitcoin_it.ts \
-  locale/bitcoin_ja.ts \
-  locale/bitcoin_ka.ts \
-  locale/bitcoin_kk_KZ.ts \
-  locale/bitcoin_ko_KR.ts \
-  locale/bitcoin_ky.ts \
-  locale/bitcoin_la.ts \
-  locale/bitcoin_lt.ts \
-  locale/bitcoin_lv_LV.ts \
-  locale/bitcoin_ms_MY.ts \
-  locale/bitcoin_nb.ts \
-  locale/bitcoin_nl.ts \
-  locale/bitcoin_pam.ts \
-  locale/bitcoin_pl.ts \
-  locale/bitcoin_pt_BR.ts \
-  locale/bitcoin_pt_PT.ts \
-  locale/bitcoin_ro_RO.ts \
-  locale/bitcoin_ru.ts \
-  locale/bitcoin_sah.ts \
-  locale/bitcoin_sk.ts \
-  locale/bitcoin_sl_SI.ts \
-  locale/bitcoin_sq.ts \
-  locale/bitcoin_sr.ts \
-  locale/bitcoin_sv.ts \
-  locale/bitcoin_th_TH.ts \
-  locale/bitcoin_tr.ts \
-  locale/bitcoin_uk.ts \
-  locale/bitcoin_ur_PK.ts \
-  locale/bitcoin_uz@Cyrl.ts \
-  locale/bitcoin_vi.ts \
-  locale/bitcoin_vi_VN.ts \
-  locale/bitcoin_zh_CN.ts \
-  locale/bitcoin_zh_HK.ts \
-  locale/bitcoin_zh_TW.ts
+  locale/sinertaler_ach.ts \
+  locale/sinertaler_af_ZA.ts \
+  locale/sinertaler_ar.ts \
+  locale/sinertaler_be_BY.ts \
+  locale/sinertaler_bg.ts \
+  locale/sinertaler_bs.ts \
+  locale/sinertaler_ca_ES.ts \
+  locale/sinertaler_ca.ts \
+  locale/sinertaler_ca@valencia.ts \
+  locale/sinertaler_cmn.ts \
+  locale/sinertaler_cs.ts \
+  locale/sinertaler_cy.ts \
+  locale/sinertaler_da.ts \
+  locale/sinertaler_de_AT.ts \
+  locale/sinertaler_de.ts \
+  locale/sinertaler_el_GR.ts \
+  locale/sinertaler_en.ts \
+  locale/sinertaler_eo.ts \
+  locale/sinertaler_es_CL.ts \
+  locale/sinertaler_es_DO.ts \
+  locale/sinertaler_es_MX.ts \
+  locale/sinertaler_es.ts \
+  locale/sinertaler_es_UY.ts \
+  locale/sinertaler_et.ts \
+  locale/sinertaler_eu_ES.ts \
+  locale/sinertaler_fa_IR.ts \
+  locale/sinertaler_fa.ts \
+  locale/sinertaler_fi.ts \
+  locale/sinertaler_fr_CA.ts \
+  locale/sinertaler_fr.ts \
+  locale/sinertaler_gl.ts \
+  locale/sinertaler_gu_IN.ts \
+  locale/sinertaler_he.ts \
+  locale/sinertaler_hi_IN.ts \
+  locale/sinertaler_hr.ts \
+  locale/sinertaler_hu.ts \
+  locale/sinertaler_id_ID.ts \
+  locale/sinertaler_it.ts \
+  locale/sinertaler_ja.ts \
+  locale/sinertaler_ka.ts \
+  locale/sinertaler_kk_KZ.ts \
+  locale/sinertaler_ko_KR.ts \
+  locale/sinertaler_ky.ts \
+  locale/sinertaler_la.ts \
+  locale/sinertaler_lt.ts \
+  locale/sinertaler_lv_LV.ts \
+  locale/sinertaler_ms_MY.ts \
+  locale/sinertaler_nb.ts \
+  locale/sinertaler_nl.ts \
+  locale/sinertaler_pam.ts \
+  locale/sinertaler_pl.ts \
+  locale/sinertaler_pt_BR.ts \
+  locale/sinertaler_pt_PT.ts \
+  locale/sinertaler_ro_RO.ts \
+  locale/sinertaler_ru.ts \
+  locale/sinertaler_sah.ts \
+  locale/sinertaler_sk.ts \
+  locale/sinertaler_sl_SI.ts \
+  locale/sinertaler_sq.ts \
+  locale/sinertaler_sr.ts \
+  locale/sinertaler_sv.ts \
+  locale/sinertaler_th_TH.ts \
+  locale/sinertaler_tr.ts \
+  locale/sinertaler_uk.ts \
+  locale/sinertaler_ur_PK.ts \
+  locale/sinertaler_uz@Cyrl.ts \
+  locale/sinertaler_vi.ts \
+  locale/sinertaler_vi_VN.ts \
+  locale/sinertaler_zh_CN.ts \
+  locale/sinertaler_zh_HK.ts \
+  locale/sinertaler_zh_TW.ts
 
 QT_FORMS_UI = \
   forms/aboutdialog.ui \
@@ -107,10 +107,10 @@ QT_MOC_CPP = \
   moc_addressbookpage.cpp \
   moc_addresstablemodel.cpp \
   moc_askpassphrasedialog.cpp \
-  moc_bitcoinaddressvalidator.cpp \
-  moc_bitcoinamountfield.cpp \
-  moc_bitcoingui.cpp \
-  moc_bitcoinunits.cpp \
+  moc_sinertaleraddressvalidator.cpp \
+  moc_sinertaleramountfield.cpp \
+  moc_sinertalergui.cpp \
+  moc_sinertalerunits.cpp \
   moc_clientmodel.cpp \
   moc_coincontroldialog.cpp \
   moc_coincontroltreewidget.cpp \
@@ -148,31 +148,31 @@ QT_MOC_CPP = \
   moc_walletmodel.cpp \
   moc_walletview.cpp
 
-BITCOIN_MM = \
+SINERTALER_MM = \
   macdockiconhandler.mm \
   macnotificationhandler.mm
 
 QT_MOC = \
-  bitcoin.moc \
+  sinertaler.moc \
   intro.moc \
   overviewpage.moc \
   rpcconsole.moc
 
-QT_QRC_CPP = qrc_bitcoin.cpp
-QT_QRC = bitcoin.qrc
+QT_QRC_CPP = qrc_sinertaler.cpp
+QT_QRC = sinertaler.qrc
 
 PROTOBUF_CC = paymentrequest.pb.cc
 PROTOBUF_H = paymentrequest.pb.h
 PROTOBUF_PROTO = paymentrequest.proto
 
-BITCOIN_QT_H = \
+SINERTALER_QT_H = \
   addressbookpage.h \
   addresstablemodel.h \
   askpassphrasedialog.h \
-  bitcoinaddressvalidator.h \
-  bitcoinamountfield.h \
-  bitcoingui.h \
-  bitcoinunits.h \
+  sinertaleraddressvalidator.h \
+  sinertaleramountfield.h \
+  sinertalergui.h \
+  sinertalerunits.h \
   clientmodel.h \
   coincontroldialog.h \
   coincontroltreewidget.h \
@@ -217,10 +217,10 @@ BITCOIN_QT_H = \
 RES_ICONS = \
   res/icons/add.png \
   res/icons/address-book.png \
-  res/icons/bitcoin.ico \
-  res/icons/bitcoin.png \
-  res/icons/bitcoin_testnet.ico \
-  res/icons/bitcoin_testnet.png \
+  res/icons/sinertaler.ico \
+  res/icons/sinertaler.png \
+  res/icons/sinertaler_testnet.ico \
+  res/icons/sinertaler_testnet.png \
   res/icons/clock1.png \
   res/icons/clock2.png \
   res/icons/clock3.png \
@@ -259,12 +259,12 @@ RES_ICONS = \
   res/icons/tx_output.png \
   res/icons/tx_mined.png
 
-BITCOIN_QT_CPP = \
-  bitcoin.cpp \
-  bitcoinaddressvalidator.cpp \
-  bitcoinamountfield.cpp \
-  bitcoingui.cpp \
-  bitcoinunits.cpp \
+SINERTALER_QT_CPP = \
+  sinertaler.cpp \
+  sinertaleraddressvalidator.cpp \
+  sinertaleramountfield.cpp \
+  sinertalergui.cpp \
+  sinertalerunits.cpp \
   clientmodel.cpp \
   csvmodelwriter.cpp \
   guiutil.cpp \
@@ -282,7 +282,7 @@ BITCOIN_QT_CPP = \
   utilitydialog.cpp
 
 if ENABLE_WALLET
-BITCOIN_QT_CPP += \
+SINERTALER_QT_CPP += \
   addressbookpage.cpp \
   addresstablemodel.cpp \
   askpassphrasedialog.cpp \
@@ -317,40 +317,40 @@ RES_IMAGES = \
 
 RES_MOVIES = $(wildcard res/movies/spinner-*.png)
 
-BITCOIN_RC = res/bitcoin-qt-res.rc
+SINERTALER_RC = res/sinertaler-qt-res.rc
 
-libbitcoinqt_a_CPPFLAGS = $(AM_CPPFLAGS) $(QT_INCLUDES) \
+libsinertalerqt_a_CPPFLAGS = $(AM_CPPFLAGS) $(QT_INCLUDES) \
   -I$(top_srcdir)/src/qt/forms $(QT_DBUS_INCLUDES)
-libbitcoinqt_a_SOURCES = $(BITCOIN_QT_CPP) $(BITCOIN_QT_H) $(QT_FORMS_UI) \
+libsinertalerqt_a_SOURCES = $(SINERTALER_QT_CPP) $(SINERTALER_QT_H) $(QT_FORMS_UI) \
   $(QT_QRC) $(QT_TS) $(PROTOBUF_PROTO) $(RES_ICONS) $(RES_IMAGES) $(RES_MOVIES)
 
-nodist_libbitcoinqt_a_SOURCES = $(QT_MOC_CPP) $(QT_MOC) $(PROTOBUF_CC) \
+nodist_libsinertalerqt_a_SOURCES = $(QT_MOC_CPP) $(QT_MOC) $(PROTOBUF_CC) \
   $(PROTOBUF_H) $(QT_QRC_CPP)
 
-BUILT_SOURCES = $(nodist_libbitcoinqt_a_SOURCES)
+BUILT_SOURCES = $(nodist_libsinertalerqt_a_SOURCES)
 
 #Generating these with a half-written protobuf header leads to wacky results.
 #This makes sure it's done.
 $(QT_MOC): $(PROTOBUF_H)
 $(QT_MOC_CPP): $(PROTOBUF_H)
 
-# bitcoin-qt binary #
-bitcoin_qt_CPPFLAGS = $(AM_CPPFLAGS) $(QT_INCLUDES) \
+# sinertaler-qt binary #
+sinertaler_qt_CPPFLAGS = $(AM_CPPFLAGS) $(QT_INCLUDES) \
   -I$(top_srcdir)/src/qt/forms
-bitcoin_qt_SOURCES = bitcoin.cpp
+sinertaler_qt_SOURCES = sinertaler.cpp
 if TARGET_DARWIN
-  bitcoin_qt_SOURCES += $(BITCOIN_MM)
+  sinertaler_qt_SOURCES += $(SINERTALER_MM)
 endif
 if TARGET_WINDOWS
-  bitcoin_qt_SOURCES += $(BITCOIN_RC)
+  sinertaler_qt_SOURCES += $(SINERTALER_RC)
 endif
-bitcoin_qt_LDADD = libbitcoinqt.a $(LIBBITCOIN_SERVER)
+sinertaler_qt_LDADD = libsinertalerqt.a $(LIBSINERTALER_SERVER)
 if ENABLE_WALLET
-bitcoin_qt_LDADD += $(LIBBITCOIN_WALLET)
+sinertaler_qt_LDADD += $(LIBSINERTALER_WALLET)
 endif
-bitcoin_qt_LDADD += $(LIBBITCOIN_CLI) $(LIBBITCOIN_COMMON) $(LIBLEVELDB) $(LIBMEMENV) \
+sinertaler_qt_LDADD += $(LIBSINERTALER_CLI) $(LIBSINERTALER_COMMON) $(LIBLEVELDB) $(LIBMEMENV) \
   $(BOOST_LIBS) $(QT_LIBS) $(QT_DBUS_LIBS) $(QR_LIBS) $(PROTOBUF_LIBS) $(BDB_LIBS)
-bitcoin_qt_LDFLAGS = $(QT_LDFLAGS)
+sinertaler_qt_LDFLAGS = $(QT_LDFLAGS)
 
 # forms/foo.h -> forms/ui_foo.h
 QT_FORMS_H=$(join $(dir $(QT_FORMS_UI)),$(addprefix ui_, $(notdir $(QT_FORMS_UI:.ui=.h))))
@@ -361,15 +361,15 @@ QT_QM=$(QT_TS:.ts=.qm)
 .PHONY: FORCE
 .SECONDARY: $(QT_QM)
 
-bitcoinstrings.cpp: FORCE
-	$(MAKE) -C $(top_srcdir)/src qt/bitcoinstrings.cpp
+sinertalerstrings.cpp: FORCE
+	$(MAKE) -C $(top_srcdir)/src qt/sinertalerstrings.cpp
 
-translate: bitcoinstrings.cpp $(QT_FORMS_UI) $(QT_FORMS_UI) $(BITCOIN_QT_CPP) $(BITCOIN_QT_H) $(BITCOIN_MM)
+translate: sinertalerstrings.cpp $(QT_FORMS_UI) $(QT_FORMS_UI) $(SINERTALER_QT_CPP) $(SINERTALER_QT_H) $(SINERTALER_MM)
 	@test -n $(LUPDATE) || echo "lupdate is required for updating translations"
-	@QT_SELECT=$(QT_SELECT) $(LUPDATE) $^ -locations relative -no-obsolete -ts locale/bitcoin_en.ts
+	@QT_SELECT=$(QT_SELECT) $(LUPDATE) $^ -locations relative -no-obsolete -ts locale/sinertaler_en.ts
 
 $(QT_QRC_CPP): $(QT_QRC) $(QT_QM) $(QT_FORMS_H) $(RES_ICONS) $(RES_IMAGES) $(RES_MOVIES) $(PROTOBUF_H)
-	@cd $(abs_srcdir); test -f $(RCC) && QT_SELECT=$(QT_SELECT) $(RCC) -name bitcoin -o $(abs_builddir)/$@ $< || \
+	@cd $(abs_srcdir); test -f $(RCC) && QT_SELECT=$(QT_SELECT) $(RCC) -name sinertaler -o $(abs_builddir)/$@ $< || \
 	  echo error: could not build $@
 	$(SED) -i.bak -e '/^\*\*.*Created:/d' $@ && rm $@.bak
 	$(SED) -i.bak -e '/^\*\*.*by:/d' $@ && rm $@.bak

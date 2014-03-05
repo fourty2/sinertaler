@@ -141,7 +141,7 @@
         <string>&amp;Request payment</string>
        </property>
        <property name="icon">
-        <iconset resource="../bitcoin.qrc">
+        <iconset resource="../sinertaler.qrc">
          <normaloff>:/icons/receiving_addresses</normaloff>:/icons/receiving_addresses</iconset>
        </property>
       </widget>
@@ -161,7 +161,7 @@
         <string>Clear</string>
        </property>
        <property name="icon">
-        <iconset resource="../bitcoin.qrc">
+        <iconset resource="../sinertaler.qrc">
          <normaloff>:/icons/remove</normaloff>:/icons/remove</iconset>
        </property>
        <property name="autoRepeatDelay">
@@ -264,7 +264,7 @@
            <string>Show</string>
           </property>
           <property name="icon">
-           <iconset resource="../bitcoin.qrc">
+           <iconset resource="../sinertaler.qrc">
             <normaloff>:/icons/edit</normaloff>:/icons/edit</iconset>
           </property>
          </widget>
@@ -278,7 +278,7 @@
            <string>Remove</string>
           </property>
           <property name="icon">
-           <iconset resource="../bitcoin.qrc">
+           <iconset resource="../sinertaler.qrc">
             <normaloff>:/icons/remove</normaloff>:/icons/remove</iconset>
           </property>
          </widget>
@@ -307,7 +307,7 @@
   <customwidget>
    <class>BitcoinAmountField</class>
    <extends>QLineEdit</extends>
-   <header>bitcoinamountfield.h</header>
+   <header>sinertaleramountfield.h</header>
   </customwidget>
  </customwidgets>
  <tabstops>
@@ -322,7 +322,7 @@
   <tabstop>removeRequestButton</tabstop>
  </tabstops>
  <resources>
-  <include location="../bitcoin.qrc"/>
+  <include location="../sinertaler.qrc"/>
  </resources>
  <connections/>
 </ui>

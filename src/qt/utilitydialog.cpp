@@ -7,7 +7,7 @@
 #include "ui_aboutdialog.h"
 #include "ui_helpmessagedialog.h"
 
-#include "bitcoingui.h"
+#include "sinertalergui.h"
 #include "clientmodel.h"
 #include "guiutil.h"
 
@@ -67,9 +67,9 @@ HelpMessageDialog::HelpMessageDialog(QWidget *parent) :
     header = tr("Bitcoin Core") + " " + tr("version") + " " +
         QString::fromStdString(FormatFullVersion()) + "\n\n" +
         tr("Usage:") + "\n" +
-        "  bitcoin-qt [" + tr("command-line options") + "]                     " + "\n";
+        "  sinertaler-qt [" + tr("command-line options") + "]                     " + "\n";
 
-    coreOptions = QString::fromStdString(HelpMessage(HMM_BITCOIN_QT));
+    coreOptions = QString::fromStdString(HelpMessage(HMM_SINERTALER_QT));
 
     uiOptions = tr("UI options") + ":\n" +
         "  -lang=<lang>           " + tr("Set language, for example \"de_DE\" (default: system locale)") + "\n" +
@@ -77,7 +77,7 @@ HelpMessageDialog::HelpMessageDialog(QWidget *parent) :
         "  -splash                " + tr("Show splash screen on startup (default: 1)") + "\n" +
         "  -choosedatadir         " + tr("Choose data directory on startup (default: 0)");
 
-    ui->helpMessageLabel->setFont(GUIUtil::bitcoinAddressFont());
+    ui->helpMessageLabel->setFont(GUIUtil::sinertalerAddressFont());
 
     // Set help message text
     ui->helpMessageLabel->setText(header + "\n" + coreOptions + "\n" + uiOptions);
