@@ -1092,7 +1092,7 @@ void static PruneOrphanBlocks()
 
 int64_t GetBlockValue(int nHeight, int64_t nFees)
 {
-    int64_t nSubsidy = 42 * COIN;
+    int64_t nSubsidy = 42000 * COIN;
 
     // Subsidy is cut in half every 210,000 blocks which will occur approximately every 4 years.
     // nSubsidy >>= (nHeight / Params().SubsidyHalvingInterval());
